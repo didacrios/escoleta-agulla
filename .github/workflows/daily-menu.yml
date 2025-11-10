@@ -1,0 +1,94 @@
+name: Enviar menú diari per Telegram
+
+on:
+  schedule:
+    # Executar cada dia laborable (dilluns a divendres) a les 6:00 AM (hora Europa/Madrid)
+    # Nota: GitHub Actions usa UTC, així que 5:00 UTC = 6:00 CET (hivern) / 7:00 CEST (estiu)
+    - cron: '0 5 * * 1-5'  # Dilluns a Divendres a les 5:00 UTC (6:00 AM hivern, 7:00 AM estiu)
+
+  # Permet executar-ho manualment des de GitHub
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Data del menú (YYYY-MM-DD, deixa buit per avui)'
+        required: false
+        type: string
+
+jobs:
+  send-menu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout del repositori
+        uses: actions/checkout@v4
+
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 📦 Instal·lar dependències
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 📅 Determinar el fitxer JSON del mes actual
+        id: get-json-file
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            TARGET_DATE="${{ github.event.inputs.date }}"
+          else
+            TARGET_DATE=$(date +%Y-%m-%d)
+          fi
+
+          MONTH=$(date -d "$TARGET_DATE" +%m)
+          YEAR=$(date -d "$TARGET_DATE" +%Y)
+
+          case $MONTH in
+            01) MONTH_NAME="gener" ;;
+            02) MONTH_NAME="febrer" ;;
+            03) MONTH_NAME="març" ;;
+            04) MONTH_NAME="abril" ;;
+            05) MONTH_NAME="maig" ;;
+            06) MONTH_NAME="juny" ;;
+            07) MONTH_NAME="juliol" ;;
+            08) MONTH_NAME="agost" ;;
+            09) MONTH_NAME="setembre" ;;
+            10) MONTH_NAME="octubre" ;;
+            11) MONTH_NAME="novembre" ;;
+            12) MONTH_NAME="desembre" ;;
+          esac
+
+          JSON_FILE="menu/data/${MONTH_NAME}_${YEAR}.json"
+
+          echo "json_file=$JSON_FILE" >> $GITHUB_OUTPUT
+          echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
+          echo "📁 Fitxer JSON: $JSON_FILE"
+          echo "📅 Data objectiu: $TARGET_DATE"
+
+      - name: 🤖 Enviar menú per Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ ! -f "${{ steps.get-json-file.outputs.json_file }}" ]; then
+            echo "❌ Error: El fitxer ${{ steps.get-json-file.outputs.json_file }} no existeix"
+            echo "💡 Assegura't d'haver processat el PDF del mes actual"
+            exit 1
+          fi
+
+          python3 src/telegram_bot.py \
+            -f "${{ steps.get-json-file.outputs.json_file }}" \
+            -d "${{ steps.get-json-file.outputs.target_date }}"
+
+      - name: ✅ Menú enviat correctament
+        if: success()
+        run: echo "🎉 Menú enviat amb èxit!"
+
+      - name: ❌ Error enviant el menú
+        if: failure()
+        run: |
+          echo "❌ Hi ha hagut un error enviant el menú"
+          echo "Comprova els logs per més detalls"
+

@@ -1,0 +1,189 @@
+{
+  "month": "novembre",
+  "year": 2025,
+  "days": [
+    {
+      "date": "2025-11-03",
+      "weekday": "Dilluns",
+      "dia": 3,
+      "primer": "Arròs amb salsa de tomàquet i ou dur",
+      "segon": "Pit de pollastre arrebossat amb enciam, pastanaga i olives",
+      "postre": "Fruita",
+      "raw": "DIA3\nArròs amb salsa de tomàquet i ou\ndur\nPit de pollastre arrebossat amb\nenciam, pastanaga i olives\nFruita"
+    },
+    {
+      "date": "2025-11-04",
+      "weekday": "Dimarts",
+      "dia": 4,
+      "primer": "Crema de pastanaga i patata amb crostons de pa",
+      "segon": "Gulashamb salsa i arròs",
+      "postre": "Fruita",
+      "raw": "DIA 4\nCrema de pastanaga i patata amb\ncrostons de pa\nGulashamb salsa i arròs\nFruita"
+    },
+    {
+      "date": "2025-11-05",
+      "weekday": "Dimecres",
+      "dia": 5,
+      "primer": "Sopa de brou amb pasta meravella",
+      "segon": "Cuixes de pollastre amb croquetes de patata casolanes",
+      "postre": "Fruita",
+      "raw": "DIA 5\nSopa de brou amb pasta meravella\nCuixes de pollastre amb croquetes\nde patata casolanes\nFruita"
+    },
+    {
+      "date": "2025-11-06",
+      "weekday": "Dijous",
+      "dia": 6,
+      "primer": "Espaguetis amb salsa bolonyesa",
+      "segon": "Hamburgueses de pastanaga amb enciam de colors",
+      "postre": "Fruita",
+      "raw": "DIA 6\nEspaguetis amb salsa bolonyesa\nHamburgueses de pastanaga amb\nenciam de colors\nFruita"
+    },
+    {
+      "date": "2025-11-07",
+      "weekday": "Divendres",
+      "dia": 7,
+      "primer": "Llenties estofades",
+      "segon": "Tonyina amb salsa de tomàquet",
+      "postre": "Iogurt",
+      "raw": "DIA 7\nLlenties estofades\nTonyina amb salsa de tomàquet\nIogurt"
+    },
+    {
+      "date": "2025-11-10",
+      "weekday": "Dilluns",
+      "dia": 10,
+      "primer": "Crema de carbassó amb crostons de pa",
+      "segon": "Canelons casolans Joan Domingo",
+      "postre": "Fruita",
+      "raw": "DIA 10\nCrema de carbassó amb crostons\nde pa\nCanelons casolans Joan Domingo\nFruita"
+    },
+    {
+      "date": "2025-11-11",
+      "weekday": "Dimarts",
+      "dia": 11,
+      "primer": "Cigrons estofats amb espinacs i ou dur",
+      "segon": "Filet de lluç amb enciam, espàrrecs i olives",
+      "postre": "Fruita",
+      "raw": "DIA 11\nCigrons estofats amb espinacs i ou\ndur\nFilet de lluç amb enciam, espàrrecs i\nolives\nFruita"
+    },
+    {
+      "date": "2025-11-12",
+      "weekday": "Dimecres",
+      "dia": 12,
+      "primer": "Patata guisada amb sípia",
+      "segon": "Hamburgueses d’espinacs amb enciam, xerri, pastanaga, moresc",
+      "postre": "Fruita",
+      "raw": "DIA 12\nPatata guisada amb sípia\nHamburgueses d’espinacs amb\nenciam, xerri, pastanaga, moresc\nFruita"
+    },
+    {
+      "date": "2025-11-13",
+      "weekday": "Dijous",
+      "dia": 13,
+      "primer": "Arròs amb verduretes",
+      "segon": "Salsitxa amb salsa de tomàquet i ou dur",
+      "postre": "Fruita",
+      "raw": "DIA 13\nArròs amb verduretes\nSalsitxa amb salsa de tomàquet i ou\ndur\nFruita"
+    },
+    {
+      "date": "2025-11-14",
+      "weekday": "Divendres",
+      "dia": 14,
+      "primer": "Macarrons amb salsa napolitana",
+      "segon": "Llibret de llom amb enciam, moresc i olives",
+      "postre": "Iogurt",
+      "raw": "DIA 14\nMacarrons amb salsa napolitana\nLlibret de llom amb enciam,\nmoresc i olives\nIogurt"
+    },
+    {
+      "date": "2025-11-17",
+      "weekday": "Dilluns",
+      "dia": 17,
+      "primer": "Llenties estofades amb verdures",
+      "segon": "Truita de patata i ceba amb enciam, pastanaga i olives",
+      "postre": "Fruita",
+      "raw": "DIA 17\nLlenties estofades amb verdures\nTruita de patata i ceba amb\nenciam, pastanaga i olives\nFruita"
+    },
+    {
+      "date": "2025-11-18",
+      "weekday": "Dimarts",
+      "dia": 18,
+      "primer": "Patata i bròquil verd",
+      "segon": "Cuixes de pollastre amb juliana de verdures",
+      "postre": "Fruita",
+      "raw": "DIA 18\nPatata i bròquil verd\nCuixes de pollastre amb juliana de\nverdures\nFruita"
+    },
+    {
+      "date": "2025-11-19",
+      "weekday": "Dimecres",
+      "dia": 19,
+      "primer": "Escudella Catalana",
+      "segon": "Llom arrebossat amb enciam. espàrrecs i tomàquet xerri",
+      "postre": "Fruita",
+      "raw": "DIA 19\nEscudella Catalana\nLlom arrebossat amb enciam.\nespàrrecs i tomàquet xerri\nFruita"
+    },
+    {
+      "date": "2025-11-20",
+      "weekday": "Dijous",
+      "dia": 20,
+      "primer": "Fideusa la cassola",
+      "segon": "Hamburgueses de carbassoi formatgeambencima, pastanagai olives",
+      "postre": "Fruita",
+      "raw": "DIA 20\nFideusa la cassola\nHamburgueses de carbassoi\nformatgeambencima, pastanagai\nolives\nFruita"
+    },
+    {
+      "date": "2025-11-21",
+      "weekday": "Divendres",
+      "dia": 21,
+      "primer": "Crema carbassaambcrostonsde pa",
+      "segon": "Mandonguillescasolanesambsalsa de verdures",
+      "postre": "Iogurt",
+      "raw": "DIA 21\nCrema carbassaambcrostonsde\npa\nMandonguillescasolanesambsalsa\nde verdures\nIogurt"
+    },
+    {
+      "date": "2025-11-24",
+      "weekday": "Dilluns",
+      "dia": 24,
+      "primer": "Patata guisada amb cap de llom i verdures",
+      "segon": "Pit de pollastre a la planxa amb enciam, moresc i olives",
+      "postre": "Fruita",
+      "raw": "DIA 24\nPatata guisada amb cap de llom i\nverdures\nPit de pollastre a la planxa amb\nenciam, moresc i olives\nFruita"
+    },
+    {
+      "date": "2025-11-25",
+      "weekday": "Dimarts",
+      "dia": 25,
+      "primer": "Tortel-linide Ricote i espinacs",
+      "segon": "Hamburgueses de pastanaga amb enciam, espàrrecs i tomàquet xerri",
+      "postre": "Fruita",
+      "raw": "DIA 25\nTortel-linide Ricote i espinacs\nHamburgueses de pastanaga amb\nenciam, espàrrecs i tomàquet xerri\nFruita"
+    },
+    {
+      "date": "2025-11-26",
+      "weekday": "Dimecres",
+      "dia": 26,
+      "primer": "Vichyssoise",
+      "segon": "Arròs amb verduretes",
+      "postre": "Fruita",
+      "raw": "DIA 26 sense proteïna animal\nVichyssoise\nArròs amb verduretes\nFruita",
+      "notes": [
+        "sense proteïna animal"
+      ]
+    },
+    {
+      "date": "2025-11-27",
+      "weekday": "Dijous",
+      "dia": 27,
+      "primer": "Sopa de brou amb pasta meravella",
+      "segon": "Salsitxa amb fesols saltejats",
+      "postre": "Fruita",
+      "raw": "DIA 27\nSopa de brou amb pasta meravella\nSalsitxa amb fesols saltejats\nFruita"
+    },
+    {
+      "date": "2025-11-28",
+      "weekday": "Divendres",
+      "dia": 28,
+      "primer": "Cigrons estofats amb verdures",
+      "segon": "Filet de lluç amb tomàquet al forn",
+      "postre": "Iogurt",
+      "raw": "DIA 28\nCigrons estofats amb verdures\nFilet de lluç amb tomàquet al forn\nIogurt"
+    }
+  ]
+}
