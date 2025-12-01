@@ -1,0 +1,177 @@
+{
+  "month": "desembre",
+  "year": 2025,
+  "days": [
+    {
+      "date": "2025-12-01",
+      "weekday": "Dilluns",
+      "dia": 1,
+      "primer": "Arròs de verduretes",
+      "segon": "Pit de pollastre amb guacamole i natxos",
+      "postre": "Fruita",
+      "raw": "DIA 1\nArròsde verduretes\nPit de pollastre amb\nguacamole i natxos\nFruita"
+    },
+    {
+      "date": "2025-12-02",
+      "weekday": "Dimarts",
+      "dia": 2,
+      "primer": "Llenties estofades amb verduretes",
+      "segon": "Filet de lluç amb enciam, pastanaga i olives",
+      "postre": "Fruita",
+      "raw": "DIA 2\nLlentiesestofadesamb\nverduretes\nFilet de lluçambenciam,\npastanaga i olives\nFruita"
+    },
+    {
+      "date": "2025-12-03",
+      "weekday": "Dimecres",
+      "dia": 3,
+      "primer": "Patata guisada amb cap de llom",
+      "segon": "Pao a la planxa amb enciam, moresc i espàrrecs",
+      "postre": "Fruita",
+      "raw": "DIA 3\nPatataguisada ambcap de\nllom\nPaoa laplanxaambenciam,\nmoresci espàrrecs\nFruita"
+    },
+    {
+      "date": "2025-12-04",
+      "weekday": "Dijous",
+      "dia": 4,
+      "primer": "Patata i coliflor",
+      "segon": "Hamburgueses d'espinacs amb enciam, moresc, i pastanaga",
+      "postre": "Fruita",
+      "raw": "DIA 4\nPatatai coliflor\nHamburgueses d’espinacs\nambenciam, moresc, i\npastanaga\nFruita"
+    },
+    {
+      "date": "2025-12-05",
+      "weekday": "Divendres",
+      "dia": 5,
+      "primer": "Sopa de brou amb pasta meravella",
+      "segon": "Vedella rostida amb salsa de verdures i parmentier de patata",
+      "postre": "Iogurt",
+      "raw": "DIA 5\nSopa de brouambpasta\nmeravella\nVedellarostida ambsalsa de\nverduresi parmentierde\npatata\nIogurt"
+    },
+    {
+      "date": "2025-12-08",
+      "weekday": "Dilluns",
+      "dia": 8,
+      "primer": "",
+      "segon": "",
+      "postre": "FESTIU",
+      "raw": "DIA 8\nFESTIU"
+    },
+    {
+      "date": "2025-12-09",
+      "weekday": "Dimarts",
+      "dia": 9,
+      "primer": "Fideua amb fumet de peix",
+      "segon": "Salsitxa amb salsa de tomàquet i ou dur",
+      "postre": "Fruita",
+      "raw": "DIA 9\nFideuaambfumetde peix\nSalsitxaambsalsa de\ntomàqueti ou dur\nFruita"
+    },
+    {
+      "date": "2025-12-10",
+      "weekday": "Dimecres",
+      "dia": 10,
+      "primer": "Cigrons estofats amb espinacs i ou",
+      "segon": "Hamburgueses de carbassó i formatge amb tomàquet amanit i olives",
+      "postre": "Fruita",
+      "raw": "DIA 10\nCigronsestofatsamb\nespinacsi ou\nHamburgueses de carbassói\nformatgeambtomàquet\namaniti olives\nFruita"
+    },
+    {
+      "date": "2025-12-11",
+      "weekday": "Dijous",
+      "dia": 11,
+      "primer": "Fideus a la cassola",
+      "segon": "Seitons amb amanida de colors",
+      "postre": "Fruita",
+      "raw": "DIA 11\nFideusa lacassola\nSeitonsambamanidade\ncolors\nFruita"
+    },
+    {
+      "date": "2025-12-12",
+      "weekday": "Divendres",
+      "dia": 12,
+      "primer": "Crema de carbassa i patata amb crostons de pa",
+      "segon": "Gulashde porc",
+      "postre": "Ioghurt",
+      "raw": "DIA 12\nCrema de carbassai patata\nambcrostonsde pa\nGulashde porc\nIoghurt"
+    },
+    {
+      "date": "2025-12-15",
+      "weekday": "Dilluns",
+      "dia": 15,
+      "primer": "Llenties estofades amb verdures",
+      "segon": "Truita francesa amb enciam, pastanaga i formatge fresc",
+      "postre": "Fruita",
+      "raw": "DIA 15\nLlentiesestofadesamb\nverdures\nTruitafrancesa ambenciam,\npastanagai formatgefresc\nFruita"
+    },
+    {
+      "date": "2025-12-16",
+      "weekday": "Dimarts",
+      "dia": 16,
+      "primer": "Arròs amb salsa de tomàquet",
+      "segon": "Hamburgueses de pastanaga i pollastre amb enciam, moresc, espàrrecs i olives",
+      "postre": "Fruita",
+      "raw": "DIA 16\nArròsambsalsa de tomàquet\nHamburgueses de pastanagai\npollastreambenciam,\nmoresc, esparracsi olives\nFruita"
+    },
+    {
+      "date": "2025-12-17",
+      "weekday": "Dimecres",
+      "dia": 17,
+      "primer": "Patata i bajoca",
+      "segon": "Filet de lluç amb verdures al forn",
+      "postre": "Fruita",
+      "raw": "DIA 17\nPatata i bajoca\nFilet de lluçambverduresal\nforn\nFruita"
+    },
+    {
+      "date": "2025-12-18",
+      "weekday": "Dijous",
+      "dia": 18,
+      "primer": "Sopa de galets",
+      "segon": "Pollastre de Nadal",
+      "postre": "Postre especial",
+      "raw": "DIA 18\nSopa de galets\nPollastrede Nadal\nPostreespecial"
+    },
+    {
+      "date": "2025-12-19",
+      "weekday": "Divendres",
+      "dia": 19,
+      "primer": "Macarros amb salsa bolonyesa",
+      "segon": "Llom arrebossat amb enciam, pastanaga i olives",
+      "postre": "Iogurt",
+      "raw": "DIA 19\nMacarros ambsalsa\nbolonyesa\nLlomarrebossatamb\nenciam, pastanagai olives\nIogurt"
+    },
+    {
+      "date": "2025-12-22",
+      "weekday": "Dilluns",
+      "dia": 22,
+      "primer": "Crema de patata i pastanaga",
+      "segon": "Hamburgueses d'espinacs amb enciam",
+      "postre": "Fruita",
+      "raw": "DIA 22\nCrema de patatai pastanaga\nHamburgueses d’espinacs\nambenciam\nFruita"
+    },
+    {
+      "date": "2025-12-23",
+      "weekday": "Dimarts",
+      "dia": 23,
+      "primer": "Cigrons estofats amb verdures",
+      "segon": "Filet de lluç al forn amb tomàquet al forn",
+      "postre": "Fruita",
+      "raw": "DIA23\nCigronsestofatsamb\nverdures\nFilet de lluçal fornamb\ntomàquetal forn\nFruita"
+    },
+    {
+      "date": "2025-12-24",
+      "weekday": "Dimecres",
+      "dia": 24,
+      "primer": "Macarrons amb salsa napolitana",
+      "segon": "Pit de pollastre a la planxa amb carbassó",
+      "postre": "Iogurt",
+      "raw": "DIA 24\nMacarronsambsalsa\nnapolitana\nPit de pollastre a la\nplanxa ambcarbassó\nIogurt"
+    },
+    {
+      "date": "2025-12-29",
+      "weekday": "Dilluns",
+      "dia": 29,
+      "primer": "Patata guisada amb cap de llom",
+      "segon": "Filet de lluç amb tomàquet amanit",
+      "postre": "Fruita",
+      "raw": "DIA 29\nPatataguisada ambcap de\nllom\nFilet de lluçambtomàquet\namanit\nFruita"
+    }
+  ]
+}
