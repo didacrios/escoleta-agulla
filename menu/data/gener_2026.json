@@ -1,0 +1,168 @@
+{
+  "month": "gener",
+  "year": 2026,
+  "days": [
+    {
+      "date": "2026-01-07",
+      "weekday": "Dimecres",
+      "dia": 7,
+      "primer": "Crema de verdures variada",
+      "segon": "Filet de lluç a la planxa amb carbassó",
+      "postre": "Fruita",
+      "raw": "DIA 7\nCrema de verdures variada\nFilet de lluç a la planxa amb\ncarbassó\nFruita"
+    },
+    {
+      "date": "2026-01-08",
+      "weekday": "Dijous",
+      "dia": 8,
+      "primer": "Arròs amb verduretes",
+      "segon": "Pit de pollastre a la planxa amb tomàquet al forn",
+      "postre": "Fruita",
+      "raw": "DIA 8\nArròs amb verduretes\nPit de pollastre a la planxa\namb tomàquet al forn\nFruita"
+    },
+    {
+      "date": "2026-01-09",
+      "weekday": "Divendres",
+      "dia": 9,
+      "primer": "Macarrons amb salsa bolonyesa",
+      "segon": "Hamburgueses de carbassó i formatge amb enciam, pastanaga i olives",
+      "postre": "Fruita",
+      "raw": "DIA 9\nMacarrons amb salsa\nbolonyesa\nHamburgueses de carbassó i\nformatge amb enciam,\npastanaga i olives\nFruita"
+    },
+    {
+      "date": "2026-01-12",
+      "weekday": "Dilluns",
+      "dia": 12,
+      "primer": "Crema de carbassó o amb crostons de pa",
+      "segon": "Gulash de porc amb arròs",
+      "postre": "Fruita",
+      "raw": "DIA 12\nCrema de carbassó o amb\ncrostons de pa\nGulashde porc amb arròs\nFruita"
+    },
+    {
+      "date": "2026-01-13",
+      "weekday": "Dimarts",
+      "dia": 13,
+      "primer": "Fideuada amb fumet de peix",
+      "segon": "Truita de patata i ceba amb tomàquet amanit",
+      "postre": "Fruita",
+      "raw": "DIA 13\nFideuada amb fumet de peix\nTruita de patata i ceba amb\ntomàquet amanit\nFruita"
+    },
+    {
+      "date": "2026-01-14",
+      "weekday": "Dimecres",
+      "dia": 14,
+      "primer": "Patata guisada amb cap de llom",
+      "segon": "Skiper de bacallà amb enciam, moresc i olives",
+      "postre": "Fruita",
+      "raw": "DIA 14\nPatata guisada amb cap de\nllom\nSkiperde bacallà amb enciam,\nmoresc i olives\nFruita"
+    },
+    {
+      "date": "2026-01-15",
+      "weekday": "Dijous",
+      "dia": 15,
+      "primer": "Llenties amb verduretes",
+      "segon": "Xuletesde gall d’indi a la planxa amb espàrrecs, enciam i pastanaga",
+      "postre": "Fruita",
+      "raw": "DIA 15\nLlenties amb verduretes\nXuletesde gall d’indi a la\nplanxa amb espàrrecs,\nenciam i pastanaga\nFruita"
+    },
+    {
+      "date": "2026-01-16",
+      "weekday": "Divendres",
+      "dia": 16,
+      "primer": "Sopa de pollastre amb pasta meravella",
+      "segon": "Cuixes de pollastre al forn amb amanida de colors",
+      "postre": "Iogurt",
+      "raw": "DIA 16\nSopa de pollastre amb pasta\nmeravella\nCuixes de pollastre al forn amb\namanida de colors\nIogurt"
+    },
+    {
+      "date": "2026-01-19",
+      "weekday": "Dilluns",
+      "dia": 19,
+      "primer": "Crema de paix amb pasta de pistons",
+      "segon": "Llom arrebossat amb enciam, tomàquet xerri i olives",
+      "postre": "Fruita",
+      "raw": "DIA 19\nCrema de paix amb pasta de\npistons\nLlom arrebossat amb\nenciam, tomàquet xerri i\nolives\nFruita"
+    },
+    {
+      "date": "2026-01-20",
+      "weekday": "Dimarts",
+      "dia": 20,
+      "primer": "Patata i bròquil",
+      "segon": "Salsitxa amb salsa de tomàquet i ou dur",
+      "postre": "Fruita",
+      "raw": "DIA 20\nPatata i bròquil\nSalsitxa amb salsa de\ntomàquet i ou dur\nFruita"
+    },
+    {
+      "date": "2026-01-21",
+      "weekday": "Dimecres",
+      "dia": 21,
+      "primer": "Fideus a la cassola",
+      "segon": "Filet de lluç amb enciam, pastanaga i olives",
+      "postre": "Fruita",
+      "raw": "DIA 21\nFideus a la cassola\nFilet de lluç amb enciam,\npastanaga i olives\nFruita"
+    },
+    {
+      "date": "2026-01-22",
+      "weekday": "Dijous",
+      "dia": 22,
+      "primer": "Espaguetis ambsalsa de formatge",
+      "segon": "Pit de pollastre a la planxa amb enciam, pastanaga i moresc",
+      "postre": "Iogurt",
+      "raw": "DIA 22\nEspaguetis ambsalsa de\nformatge\nPit de pollastre a la planxa\namb enciam, pastanaga i\nmoresc\nIogurt"
+    },
+    {
+      "date": "2026-01-23",
+      "weekday": "Divendres",
+      "dia": 23,
+      "primer": "Cigrons amb verduretes",
+      "segon": "Arròs amb tomàquet",
+      "postre": "Fruita",
+      "raw": "DIA 23 dia sense proteïna\nanimal\nCigrons amb verduretes\nArròs amb tomàquet\nFruita"
+    },
+    {
+      "date": "2026-01-26",
+      "weekday": "Dilluns",
+      "dia": 26,
+      "primer": "Llenties estofades amb verdures",
+      "segon": "Truita francesa amb enciam, pastanaga i olives",
+      "postre": "Fruita",
+      "raw": "DIA 26\nLlenties estofades amb\nverdures\nTruita francesa amb enciam,\npastanaga i olives\nFruita"
+    },
+    {
+      "date": "2026-01-27",
+      "weekday": "Dimarts",
+      "dia": 27,
+      "primer": "Patata guisada amb sípia",
+      "segon": "Gall d’indi a la planxa amb enciam, pastanaga i espàrrecs",
+      "postre": "Fruita",
+      "raw": "DIA 27\nPatata guisada amb sípia\nGall d’indi a la planxa amb\nenciam, pastanaga i espàrrecs\nFruita"
+    },
+    {
+      "date": "2026-01-28",
+      "weekday": "Dimecres",
+      "dia": 28,
+      "primer": "Sopa der brou amb pasta meravella",
+      "segon": "Mandonguilles amb salsa de verdures",
+      "postre": "Fruita",
+      "raw": "DIA 28\nSopa der brou amb pasta\nmeravella\nMandonguilles amb salsa de\nverdures\nFruita"
+    },
+    {
+      "date": "2026-01-29",
+      "weekday": "Dijous",
+      "dia": 29,
+      "primer": "Arròs amb pollastre i verdures",
+      "segon": "Filet de lluç amb tomàquet amanit",
+      "postre": "Fruita",
+      "raw": "DIA 29\nArròs amb pollastre i\nverdures\nFilet de lluç amb tomàquet\namanit\nFruita"
+    },
+    {
+      "date": "2026-01-30",
+      "weekday": "Divendres",
+      "dia": 30,
+      "primer": "Macarrons amb salsa de napolitana",
+      "segon": "Pernilets de pollastre al forn amb enciam, pastanaga i moresc",
+      "postre": "Iogurt",
+      "raw": "DIA 30\nMacarrons amb salsa de\nnapolitana\nPerniletsde pollastre al forn\namb enciam, pastanaga i\nmoresc\nIogurt"
+    }
+  ]
+}
