@@ -1,0 +1,186 @@
+{
+  "month": "febrer",
+  "year": 2026,
+  "days": [
+    {
+      "date": "2026-02-02",
+      "weekday": "Dilluns",
+      "dia": 2,
+      "primer": "Patata i bajoca",
+      "segon": "Filet de lluç amb enciam, pastanaga i moresc",
+      "postre": "Fruita",
+      "raw": "DIA 2\nPatata i bajoca\nFilet de lluç amb enciam,\npastanaga i moresc\nFruita"
+    },
+    {
+      "date": "2026-02-03",
+      "weekday": "Dimarts",
+      "dia": 3,
+      "primer": "Arròs amb verduretes",
+      "segon": "Truita de patata i ceba amb tomàquet amanit amb olives",
+      "postre": "Fruita",
+      "raw": "DIA 3\nArròs amb verduretes\nTruita de patata i ceba amb\ntomàquet amanit amb olives\nFruita"
+    },
+    {
+      "date": "2026-02-04",
+      "weekday": "Dimecres",
+      "dia": 4,
+      "primer": "Cigrons estofats amb verduretes i espinacs",
+      "segon": "Hamburgueses d’espinacs amb enciam, moresc i espàrrecs",
+      "postre": "Fruita",
+      "raw": "DIA 4\nCigrons estofats amb verduretes i\nespinacs\nHamburgueses d’espinacs amb\nenciam, moresc i espàrrecs\nFruita"
+    },
+    {
+      "date": "2026-02-05",
+      "weekday": "Dijous",
+      "dia": 5,
+      "primer": "Crema de carbassa i patata amb crostons de pa",
+      "segon": "Estofat de vedella nacional amb salsa de verdures",
+      "postre": "Fruita",
+      "raw": "DIA 5\nCrema de carbassa i patata\namb crostons de pa\nEstofat de vedella nacional amb\nsalsa de verdures\nFruita"
+    },
+    {
+      "date": "2026-02-06",
+      "weekday": "Divendres",
+      "dia": 6,
+      "primer": "Sopa de brou amb pasta meravella",
+      "segon": "Cuixes de pollastre amb juliana de verdures",
+      "postre": "Iogurt",
+      "raw": "DIA 6\nSopa de brou amb pasta\nmeravella\nCuixes de pollastre amb\njuliana de verdures\nIogurt"
+    },
+    {
+      "date": "2026-02-09",
+      "weekday": "Dilluns",
+      "dia": 9,
+      "primer": "Llenties estofades amb verdures i arròs",
+      "segon": "Aletes de pollastre adobades amb enciam, pastanaga i moresc",
+      "postre": "Fruita",
+      "raw": "DIA 9\nLlenties estofades amb\nverdures i arròs\nAletes de pollastre adobades\namb enciam, pastanaga i\nmoresc\nFruita"
+    },
+    {
+      "date": "2026-02-10",
+      "weekday": "Dimarts",
+      "dia": 10,
+      "primer": "Patata guisada amb cap de llom",
+      "segon": "Salmó a la planxa amb enciam, pastanaga, olives i tomàquet xerri",
+      "postre": "Fruita",
+      "raw": "DIA 10\nPatata guisada amb cap de\nllom\nSalmó a la planxa amb enciam,\npastanaga, olives i tomàquet\nxerri\nFruita"
+    },
+    {
+      "date": "2026-02-11",
+      "weekday": "Dimecres",
+      "dia": 11,
+      "primer": "Crema d’ espàrrecs amb crostons de pa",
+      "segon": "Gall d’indi amb enciam, pastanaga, moresc",
+      "postre": "Fruita",
+      "raw": "DIA 11\nCrema d’ espàrrecs amb crostons\nde pa\nGall d’indi amb enciam,\npastanaga, moresc\nFruita"
+    },
+    {
+      "date": "2026-02-12",
+      "weekday": "Dijous",
+      "dia": 12,
+      "primer": "Macarrons amb salsa napolitana",
+      "segon": "Pit de pollastre a la planxa amb enciam, pastanaga i olives",
+      "postre": "Fruita",
+      "raw": "DIA 12 DIJOUS GRAS\nMacarrons amb salsa napolitana\nPit de pollastre a la planxa amb\nenciam, pastanaga i olives\nFruita"
+    },
+    {
+      "date": "2026-02-13",
+      "weekday": "Divendres",
+      "dia": 13,
+      "primer": "Fideus a la cassola",
+      "segon": "Croquetes de bullit amb enciam, tomàquet xerri i formatge fresc",
+      "postre": "Ioghurt",
+      "raw": "DIA 13\nFideus a la cassola\nCroquetes de bullit amb\nenciam, tomàquet xerri i\nformatge fresc\nIoghurt"
+    },
+    {
+      "date": "2026-02-16",
+      "weekday": "Dilluns",
+      "dia": 16,
+      "primer": "Patata i bròquil",
+      "segon": "Filet de lluç amb tomàquet al forn",
+      "postre": "Fruita",
+      "raw": "DIA 16\nPatata i bròquil\nFilet de lluç amb tomàquet al\nforn\nFruita"
+    },
+    {
+      "date": "2026-02-17",
+      "weekday": "Dimarts",
+      "dia": 17,
+      "primer": "Vichessoyseamb crostons de pa",
+      "segon": "Cuixes de pollastre al forn amb croquetes de patata",
+      "postre": "Fruita",
+      "raw": "DIA 17\nVichessoyseamb crostons de\npa\nCuixes de pollastre al forn amb\ncroquetes de patata\nFruita"
+    },
+    {
+      "date": "2026-02-18",
+      "weekday": "Dimecres",
+      "dia": 18,
+      "primer": "Fesols estofats amb verduretes",
+      "segon": "Salsitxa amb salsa de tomàquet i ou dur",
+      "postre": "Fruita",
+      "raw": "DIA 18\nFesols estofats amb verduretes\nSalsitxa amb salsa de tomàquet i\nou dur\nFruita"
+    },
+    {
+      "date": "2026-02-19",
+      "weekday": "Dijous",
+      "dia": 19,
+      "primer": "Espaguetis amb salsa carbonara",
+      "segon": "Hamburgueses de pastanaga ambencima, moresc, esparrecs i olives",
+      "postre": "Fruita",
+      "raw": "DIA 19\nEspaguetis ambsalsa\ncarbonara\nHamburgueses de pastanaga\nambencima, moresc, esparrecs\ni olives\nFruita"
+    },
+    {
+      "date": "2026-02-20",
+      "weekday": "Divendres",
+      "dia": 20,
+      "primer": "Fideuada amb fumet de peix i sípia",
+      "segon": "Truita francesa amb enciam, tomàquet i formatge fresc",
+      "postre": "Iogurt",
+      "raw": "DIA 20\nFideuada amb fumet de peix i\nsípia\nTruita francesa amb enciam,\ntomàquet i formatge fresc\nIogurt"
+    },
+    {
+      "date": "2026-02-23",
+      "weekday": "Dilluns",
+      "dia": 23,
+      "primer": "Crema de carbassó amb patata i crostons de pa",
+      "segon": "Canelons casolans “Joan Domingo",
+      "postre": "Fruita",
+      "raw": "DIA 23\nCrema de carbassó amb\npatata i crostons de pa\nCanelons casolans “Joan\nDomingo\nFruita"
+    },
+    {
+      "date": "2026-02-24",
+      "weekday": "Dimarts",
+      "dia": 24,
+      "primer": "Sopa de brou amb pasta meravella",
+      "segon": "Mandonguilles amb salsa de verduretes",
+      "postre": "Fruita",
+      "raw": "DIA 24\nSopa de brou amb pasta\nmeravella\nMandonguilles amb salsa de\nverduretes\nFruita"
+    },
+    {
+      "date": "2026-02-25",
+      "weekday": "Dimecres",
+      "dia": 25,
+      "primer": "Macarrons amb salsa bolonyesa",
+      "segon": "Pit de pollastre a la planxa amb enciam, espàrrecs i moresc",
+      "postre": "Fruita",
+      "raw": "DIA 25\nMacarrons amb salsa bolonyesa\nPit de pollastre a la planxa amb\nenciam, espàrrecs i moresc\nFruita"
+    },
+    {
+      "date": "2026-02-26",
+      "weekday": "Dijous",
+      "dia": 26,
+      "primer": "Fideusa la cassola",
+      "segon": "Filet de lluç ambamanida de tomàquet i pastanaga",
+      "postre": "Fruita",
+      "raw": "DIA 26\nFideusa la cassola\nFilet de lluçambamanidade\ntomaqueti pastanaga\nFruita"
+    },
+    {
+      "date": "2026-02-27",
+      "weekday": "Divendres",
+      "dia": 27,
+      "primer": "Cigrons estofats amb verdures",
+      "segon": "Hamburgueses mixtes casolanes amb enciam, tomàquet xerri i olives",
+      "postre": "Iogurt",
+      "raw": "DIA 27\nCigrons estofats amb verdures\nHamburgueses mixtes\ncasolanes amb enciam,\ntomàquet xerri i olives\nIogurt"
+    }
+  ]
+}
