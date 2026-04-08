@@ -1,0 +1,168 @@
+{
+  "month": "abril",
+  "year": 2026,
+  "days": [
+    {
+      "date": "2026-04-07",
+      "weekday": "Dimarts",
+      "dia": 7,
+      "primer": "Macarrons amb salsa bolonyesa",
+      "segon": "Croquetes de bullit amb enciam, pastanaga, moresc i olives",
+      "postre": "N/D",
+      "raw": "DIA 7\nMacarrons amb salsa\nbolonyesa\nCroquetes de bullit amb\nenciam, pastanaga, moresc i\nolives"
+    },
+    {
+      "date": "2026-04-08",
+      "weekday": "Dimecres",
+      "dia": 8,
+      "primer": "Fideus a la cassola",
+      "segon": "Pit de pollastre a la planxa amb panotxa de moresc",
+      "postre": "N/D",
+      "raw": "DIA 8\nFideus a la cassola\nPit de pollastre a la planxa amb\npanotxa de moresc"
+    },
+    {
+      "date": "2026-04-09",
+      "weekday": "Dijous",
+      "dia": 9,
+      "primer": "Llenties estofades amb verdures",
+      "segon": "Filet de lluç amb enciam, pastanaga i olives",
+      "postre": "N/D",
+      "raw": "DIA 9\nLlenties estofades amb\nverdures\nFilet de lluç amb enciam,\npastanaga i olives"
+    },
+    {
+      "date": "2026-04-10",
+      "weekday": "Divendres",
+      "dia": 10,
+      "primer": "Crema de carbassó amb crostons de pa",
+      "segon": "Salsitxa amb salsa de tomàquet i ou dur",
+      "postre": "N/D",
+      "raw": "DIA 10\nCrema de carbassó amb\ncrostons de pa\nSalsitxa amb salsa de\ntomàquet i ou dur"
+    },
+    {
+      "date": "2026-04-13",
+      "weekday": "Dilluns",
+      "dia": 13,
+      "primer": "Arròs amb salsa de tomàquet",
+      "segon": "Skiperde bacallà amb enciam, pastanaga i olives",
+      "postre": "N/D",
+      "raw": "DIA 13\nArròs amb salsa de\ntomàquet\nSkiperde bacallà amb\nenciam, pastanaga i olives"
+    },
+    {
+      "date": "2026-04-14",
+      "weekday": "Dimarts",
+      "dia": 14,
+      "primer": "Cigrons estofats",
+      "segon": "Gall d’indi amb enciam, pastanaga i moresc",
+      "postre": "N/D",
+      "raw": "DIA 14\nCigrons estofats\nGall d’indi amb enciam,\npastanaga i moresc"
+    },
+    {
+      "date": "2026-04-15",
+      "weekday": "Dimecres",
+      "dia": 15,
+      "primer": "Sopa de brou amb pistons",
+      "segon": "Pernilsde pollastre a l’all amb patates",
+      "postre": "N/D",
+      "raw": "DIA 15\nSopa de brou amb pistons\nPernilsde pollastre a l’all amb\npatates"
+    },
+    {
+      "date": "2026-04-16",
+      "weekday": "Dijous",
+      "dia": 16,
+      "primer": "Espaguetis amb salsa carbonarà",
+      "segon": "Hamburgueses d’espinacs amb enciam, pastanaga i olives",
+      "postre": "N/D",
+      "raw": "DIA 16\nEspaguetis amb salsa\ncarbonarà\nHamburgueses d’espinacs\namb enciam, pastanaga i\nolives"
+    },
+    {
+      "date": "2026-04-17",
+      "weekday": "Divendres",
+      "dia": 17,
+      "primer": "Patata i bajoca",
+      "segon": "Gulashde porc amb arròs",
+      "postre": "N/D",
+      "raw": "DIA 17\nPatata i bajoca\nGulashde porc amb arròs"
+    },
+    {
+      "date": "2026-04-20",
+      "weekday": "Dilluns",
+      "dia": 20,
+      "primer": "PROTEINA",
+      "segon": "Crema d’espàrrecs amb crostons de pa Macarrons amb salsa napolitana",
+      "postre": "N/D",
+      "raw": "DIA 20 DIA SENSE\nPROTEINA\nCrema d’espàrrecs amb\ncrostons de pa\nMacarrons amb salsa\nnapolitana"
+    },
+    {
+      "date": "2026-04-21",
+      "weekday": "Dimarts",
+      "dia": 21,
+      "primer": "Llenties estofades",
+      "segon": "Filet de lluç amb enciam, olives i moresc",
+      "postre": "N/D",
+      "raw": "DIA 21\nLlenties estofades\nFilet de lluç amb enciam,\nolives i moresc"
+    },
+    {
+      "date": "2026-04-22",
+      "weekday": "Dimecres",
+      "dia": 22,
+      "primer": "Patata guisada amb cap de llom",
+      "segon": "Pit de pollastre ambguacamole",
+      "postre": "N/D",
+      "raw": "DIA 22\nPatata guisada amb cap de\nllom\nPit de pollastre ambguacamole"
+    },
+    {
+      "date": "2026-04-23",
+      "weekday": "Dijous",
+      "dia": 23,
+      "primer": "Arrosambpollastre i curry",
+      "segon": "Salsitxaambsalsa de tomaqueti oudur",
+      "postre": "N/D",
+      "raw": "DIA 23\nArrosambpollastre i curry\nSalsitxaambsalsa de\ntomaqueti oudur"
+    },
+    {
+      "date": "2026-04-24",
+      "weekday": "Divendres",
+      "dia": 24,
+      "primer": "Fideuaamb fumet de peix i sípia",
+      "segon": "Truita de patata i ceba amb pastanaga i olives",
+      "postre": "N/D",
+      "raw": "DIA 24\nFideuaamb fumet de peix i\nsípia\nTruita de patata i ceba amb\npastanaga i olives"
+    },
+    {
+      "date": "2026-04-27",
+      "weekday": "Dilluns",
+      "dia": 27,
+      "primer": "Crema de pastanaga amb crostons de pa",
+      "segon": "Canelons Joan Domingo",
+      "postre": "N/D",
+      "raw": "DIA 27\nCrema de pastanaga amb\ncrostons de pa\nCanelons Joan Domingo"
+    },
+    {
+      "date": "2026-04-28",
+      "weekday": "Dimarts",
+      "dia": 28,
+      "primer": "Cigrons estofats amb ou dur",
+      "segon": "Filet de lluç amb amanida de tomàquet i olives",
+      "postre": "N/D",
+      "raw": "DIA 28\nCigrons estofats amb ou dur\nFilet de lluç amb amanida de\ntomàquet i olives"
+    },
+    {
+      "date": "2026-04-29",
+      "weekday": "Dimecres",
+      "dia": 29,
+      "primer": "Amanidad’espiralsde colors",
+      "segon": "Hamburgueses mixtes casolanesambenciam, moresc i olives",
+      "postre": "N/D",
+      "raw": "DIA 29\nAmanidad’espiralsde colors\nHamburgueses mixtes\ncasolanesambenciam, moresc\ni olives"
+    },
+    {
+      "date": "2026-04-30",
+      "weekday": "Dijous",
+      "dia": 30,
+      "primer": "Patata i coliflor",
+      "segon": "Pollastre amb salsa xilindron",
+      "postre": "N/D",
+      "raw": "DIA 30\nPatata i coliflor\nPollastre amb salsa\nxilindron"
+    }
+  ]
+}
