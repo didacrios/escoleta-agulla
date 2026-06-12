@@ -50,7 +50,7 @@ def format_menu_message(day_data: dict, month_name: str) -> str:
     Returns:
         Text formatat per enviar (amb HTML)
     """
-    message = f"🍽️ <b>Menú d'avui - {day_data['weekday']} {day_data['dia']} de {month_name}</b>\n\n"
+    message = f"🍽️ <b>Menú - {day_data['weekday']} {day_data['dia']} de {month_name}</b>\n\n"
 
     if day_data.get('notes'):
         message += f"📝 <i>{', '.join(day_data['notes'])}</i>\n\n"

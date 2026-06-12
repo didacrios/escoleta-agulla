@@ -2,9 +2,10 @@ name: Enviar menú diari per Telegram
 
 on:
   schedule:
-    # Executar cada dia laborable (dilluns a divendres) a les 6:00 AM (hora Europa/Madrid)
-    # Nota: GitHub Actions usa UTC, així que 5:00 UTC = 6:00 CET (hivern) / 7:00 CEST (estiu)
-    - cron: '0 5 * * 1-5'  # Dilluns a Divendres a les 5:00 UTC (6:00 AM hivern, 7:00 AM estiu)
+    # Executar el dia abans a les 7:00 PM (hora Europa/Madrid)
+    # Diumenge a Dijous a les 17:00 UTC = 19:00 CEST (estiu) / 18:00 CET (hivern)
+    # El menú s'envia per al dia següent (dilluns a divendres)
+    - cron: '0 17 * * 0-4'
 
   # Permet executar-ho manualment des de GitHub
   workflow_dispatch:
@@ -39,7 +40,7 @@ jobs:
           if [ -n "${{ github.event.inputs.date }}" ]; then
             TARGET_DATE="${{ github.event.inputs.date }}"
           else
-            TARGET_DATE=$(date +%Y-%m-%d)
+            TARGET_DATE=$(date -d "tomorrow" +%Y-%m-%d)
           fi
 
           MONTH=$(date -d "$TARGET_DATE" +%m)
@@ -91,4 +92,3 @@ jobs:
         run: |
           echo "❌ Hi ha hagut un error enviant el menú"
           echo "Comprova els logs per més detalls"
-
