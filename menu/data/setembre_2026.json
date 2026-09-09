@@ -1,0 +1,123 @@
+{
+  "month": "setembre",
+  "year": 2026,
+  "days": [
+    {
+      "date": "2026-09-14",
+      "weekday": "Dilluns",
+      "dia": 14,
+      "primer": "Arròs amb salsa de tomàquet",
+      "segon": "Pit de pollastre amb amanida",
+      "postre": "N/D",
+      "raw": "Arròs amb salsa de\ntomàquet\nPit de pollastre amb amanida"
+    },
+    {
+      "date": "2026-09-15",
+      "weekday": "Dimarts",
+      "dia": 15,
+      "primer": "Cigrons estofats",
+      "segon": "Lluç planxa amb tomàquet al forn",
+      "postre": "N/D",
+      "raw": "Cigrons estofats\nLluç planxa amb tomàquet al\nforn"
+    },
+    {
+      "date": "2026-09-16",
+      "weekday": "Dimecres",
+      "dia": 16,
+      "primer": "Amanida russa",
+      "segon": "Llom arrebossat amb amanida",
+      "postre": "N/D",
+      "raw": "Amanida russa\nLlom arrebossat amb amanida"
+    },
+    {
+      "date": "2026-09-17",
+      "weekday": "Dijous",
+      "dia": 17,
+      "primer": "Patata amb bajoca",
+      "segon": "Cuixa de pollastre amb salsa juliana de verdures",
+      "postre": "N/D",
+      "raw": "Patata amb bajoca\nCuixa de pollastre amb salsa\njuliana de verdures"
+    },
+    {
+      "date": "2026-09-18",
+      "weekday": "Divendres",
+      "dia": 18,
+      "primer": "Fideuada de verdures",
+      "segon": "Truita francesa amb amanida",
+      "postre": "Fruita de temporada",
+      "raw": "Fideuada de verdures\nTruita francesa amb amanida\nFruita de temporada"
+    },
+    {
+      "date": "2026-09-21",
+      "weekday": "Dilluns",
+      "dia": 21,
+      "primer": "Crema de carbassó i patata",
+      "segon": "Llenties estofades amb verdures",
+      "postre": "N/D",
+      "raw": "Crema de carbassó i patata\nLlenties estofades amb\nverdures"
+    },
+    {
+      "date": "2026-09-22",
+      "weekday": "Dimarts",
+      "dia": 22,
+      "primer": "Arròs amb verdures",
+      "segon": "Lluç planxa amb amanida variada",
+      "postre": "N/D",
+      "raw": "Arròs amb verdures\nLluç planxa amb amanida\nvariada"
+    },
+    {
+      "date": "2026-09-23",
+      "weekday": "Dimecres",
+      "dia": 23,
+      "primer": "Amanida de patata amb ou, olives i tonyina",
+      "segon": "Pollastre amb panotxa",
+      "postre": "N/D",
+      "raw": "Amanida de patata amb ou,\nolives i tonyina\nPollastre amb panotxa"
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "Dijous",
+      "dia": 24,
+      "primer": "Cigrons estofats amb verdures",
+      "segon": "Ous durs amb salsa de tomàquet i formatge",
+      "postre": "N/D",
+      "raw": "Cigrons estofats amb\nverdures\nOus durs amb salsa de\ntomàquet i formatge"
+    },
+    {
+      "date": "2026-09-25",
+      "weekday": "Divendres",
+      "dia": 25,
+      "primer": "Patata bullida amb bròquil",
+      "segon": "Hamburgueses de pollastre amb amanida de tomàquet",
+      "postre": "N/D",
+      "raw": "Patata bullida amb bròquil\nHamburgueses de pollastre\namb amanida de tomàquet"
+    },
+    {
+      "date": "2026-09-28",
+      "weekday": "Dilluns",
+      "dia": 28,
+      "primer": "Crema de verdura",
+      "segon": "Canelons Joan Domingo",
+      "postre": "N/D",
+      "raw": "Crema de verdura\nCanelons Joan Domingo"
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": "Dimarts",
+      "dia": 29,
+      "primer": "Arròs amb salsa de tomàquet",
+      "segon": "Hamburgueses de pastanaga amb amanida variada",
+      "postre": "N/D",
+      "raw": "Arròs amb salsa de\ntomàquet\nHamburgueses de pastanaga\namb amanida variada"
+    },
+    {
+      "date": "2026-09-30",
+      "weekday": "Dimecres",
+      "dia": 30,
+      "primer": "Llenties estofades",
+      "segon": "Truita de patata amb amanida de tomàquet",
+      "postre": "N/D",
+      "raw": "Llenties estofades\nTruita de patata amb amanida\nde tomàquet"
+    }
+  ]
+}
