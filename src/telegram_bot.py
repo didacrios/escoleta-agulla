@@ -4,7 +4,9 @@ Bot de Telegram per enviar el menú diari escolar.
 """
 import json
 import os
+import sys
 import asyncio
+import sys
 from datetime import date
 from pathlib import Path
 from dotenv import load_dotenv
@@ -101,7 +103,7 @@ def main(json_file: str, date_str: str):
 
     if not bot_token or not chat_id:
         click.echo("❌ Error: TELEGRAM_BOT_TOKEN i TELEGRAM_CHAT_ID han d'estar definits al .env")
-        return
+        sys.exit(1)
 
     # Determinar la data
     if date_str:
@@ -109,7 +111,7 @@ def main(json_file: str, date_str: str):
             target_date = date.fromisoformat(date_str)
         except ValueError:
             click.echo(f"❌ Error: Format de data incorrecte. Usa YYYY-MM-DD")
-            return
+            sys.exit(1)
     else:
         target_date = date.today()
 
@@ -129,7 +131,7 @@ def main(json_file: str, date_str: str):
         if not Path(json_file).exists():
             click.echo(f"❌ Error: No s'ha trobat el fitxer {json_file}")
             click.echo("   Especifica el fitxer amb --json-file")
-            return
+            sys.exit(1)
 
     click.echo(f"📖 Llegint: {json_file}")
 
@@ -138,7 +140,7 @@ def main(json_file: str, date_str: str):
         menu_data = load_menu_data(json_file)
     except Exception as e:
         click.echo(f"❌ Error carregant el menú: {e}")
-        return
+        sys.exit(1)
 
     # Buscar el menú del dia
     day_menu = get_menu_for_date(menu_data, target_date)
@@ -147,7 +149,7 @@ def main(json_file: str, date_str: str):
         click.echo(f"❌ No s'ha trobat menú per la data {target_date.isoformat()}")
         click.echo(f"   Aquest menú conté dates des de {menu_data['days'][0]['date']} "
                    f"fins {menu_data['days'][-1]['date']}")
-        return
+        sys.exit(1)
 
     # Formatar i enviar el missatge
     message = format_menu_message(day_menu, menu_data['month'])
@@ -162,6 +164,7 @@ def main(json_file: str, date_str: str):
         click.echo("\n✅ Missatge enviat correctament!")
     except Exception as e:
         click.echo(f"\n❌ Error: {e}")
+        sys.exit(1)
 
 
 if __name__ == '__main__':

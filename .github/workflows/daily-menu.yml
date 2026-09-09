@@ -11,12 +11,89 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: 'Data del menú (YYYY-MM-DD, deixa buit per avui)'
+        description: 'Data del menú (YYYY-MM-DD, deixa buit per demà)'
         required: false
         type: string
 
 jobs:
-  send-menu:
+  # Fase 1: comprovar si hi ha menú per la data objectiu.
+  # Aquest job MAI falla per absència de menú: és un estat esperat
+  # (PDF del mes encara no processat, o dia festiu fora del JSON).
+  # El resultat es reporta al resum del run (GITHUB_STEP_SUMMARY).
+  check-menu:
+    runs-on: ubuntu-latest
+    outputs:
+      available: ${{ steps.check.outputs.available }}
+      json_file: ${{ steps.check.outputs.json_file }}
+      target_date: ${{ steps.check.outputs.target_date }}
+
+    steps:
+      - name: 📥 Checkout del repositori
+        uses: actions/checkout@v4
+
+      - name: 🔍 Comprovar si hi ha menú per la data objectiu
+        id: check
+        env:
+          INPUT_DATE: ${{ github.event.inputs.date }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from datetime import date, timedelta
+          from pathlib import Path
+
+          inp = os.environ.get("INPUT_DATE", "").strip()
+          target = date.fromisoformat(inp) if inp else date.today() + timedelta(days=1)
+
+          months = {1: 'gener', 2: 'febrer', 3: 'març', 4: 'abril',
+                    5: 'maig', 6: 'juny', 7: 'juliol', 8: 'agost',
+                    9: 'setembre', 10: 'octubre', 11: 'novembre', 12: 'desembre'}
+          json_file = f"menu/data/{months[target.month]}_{target.year}.json"
+
+          available = False
+          if not Path(json_file).exists():
+              reason = (f"El fitxer `{json_file}` no existeix. "
+                        f"Encara no s'ha processat el PDF d'aquest mes.")
+          else:
+              data = json.load(open(json_file, encoding='utf-8'))
+              dates = [d.get('date') for d in data.get('days', [])]
+              if target.isoformat() in dates:
+                  available = True
+                  reason = ""
+              elif not dates:
+                  reason = f"El fitxer `{json_file}` existeix però no conté cap dia."
+              else:
+                  reason = (f"La data `{target}` no és al menú "
+                            f"(rang disponible: {dates[0]} a {dates[-1]}). "
+                            f"Pot ser un dia festiu o de vacances.")
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"available={'true' if available else 'false'}\n")
+              f.write(f"json_file={json_file}\n")
+              f.write(f"target_date={target.isoformat()}\n")
+
+          icon = "✅" if available else "ℹ️"
+          status = "Menú disponible" if available else "Sense menú (no és un error)"
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              f.write(f"## {icon} Check del menú — {target.isoformat()}\n\n")
+              f.write(f"- **Estat:** {status}\n")
+              f.write(f"- **Fitxer:** `{json_file}`\n")
+              if reason:
+                  f.write(f"- **Motiu:** {reason}\n")
+
+          print(f"{icon} {status}")
+          print(f"📅 Data objectiu: {target.isoformat()}")
+          print(f"📁 Fitxer: {json_file}")
+          if reason:
+              print(f"ℹ️ {reason}")
+          PY
+
+  # Fase 2: enviar el menú a Telegram. Només s'executa si hi ha menú.
+  # Els errors d'enviament (token invàlid, API de Telegram, etc.) SÍ que
+  # fan fallar el pipeline: són errors reals que cal veure en vermell.
+  publish-menu:
+    needs: check-menu
+    if: needs.check-menu.outputs.available == 'true'
     runs-on: ubuntu-latest
 
     steps:
@@ -34,61 +111,15 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 📅 Determinar el fitxer JSON del mes actual
-        id: get-json-file
-        run: |
-          if [ -n "${{ github.event.inputs.date }}" ]; then
-            TARGET_DATE="${{ github.event.inputs.date }}"
-          else
-            TARGET_DATE=$(date -d "tomorrow" +%Y-%m-%d)
-          fi
-
-          MONTH=$(date -d "$TARGET_DATE" +%m)
-          YEAR=$(date -d "$TARGET_DATE" +%Y)
-
-          case $MONTH in
-            01) MONTH_NAME="gener" ;;
-            02) MONTH_NAME="febrer" ;;
-            03) MONTH_NAME="març" ;;
-            04) MONTH_NAME="abril" ;;
-            05) MONTH_NAME="maig" ;;
-            06) MONTH_NAME="juny" ;;
-            07) MONTH_NAME="juliol" ;;
-            08) MONTH_NAME="agost" ;;
-            09) MONTH_NAME="setembre" ;;
-            10) MONTH_NAME="octubre" ;;
-            11) MONTH_NAME="novembre" ;;
-            12) MONTH_NAME="desembre" ;;
-          esac
-
-          JSON_FILE="menu/data/${MONTH_NAME}_${YEAR}.json"
-
-          echo "json_file=$JSON_FILE" >> $GITHUB_OUTPUT
-          echo "target_date=$TARGET_DATE" >> $GITHUB_OUTPUT
-          echo "📁 Fitxer JSON: $JSON_FILE"
-          echo "📅 Data objectiu: $TARGET_DATE"
-
       - name: 🤖 Enviar menú per Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          if [ ! -f "${{ steps.get-json-file.outputs.json_file }}" ]; then
-            echo "❌ Error: El fitxer ${{ steps.get-json-file.outputs.json_file }} no existeix"
-            echo "💡 Assegura't d'haver processat el PDF del mes actual"
-            exit 1
-          fi
-
           python3 src/telegram_bot.py \
-            -f "${{ steps.get-json-file.outputs.json_file }}" \
-            -d "${{ steps.get-json-file.outputs.target_date }}"
+            -f "${{ needs.check-menu.outputs.json_file }}" \
+            -d "${{ needs.check-menu.outputs.target_date }}"
 
       - name: ✅ Menú enviat correctament
         if: success()
         run: echo "🎉 Menú enviat amb èxit!"
-
-      - name: ❌ Error enviant el menú
-        if: failure()
-        run: |
-          echo "❌ Hi ha hagut un error enviant el menú"
-          echo "Comprova els logs per més detalls"
