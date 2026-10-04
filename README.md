@@ -68,6 +68,21 @@ Per activar l'automatització, afegeix els secrets al teu repositori de GitHub:
 
 Això generarà automàticament el fitxer JSON a `menu/data/`.
 
+El parser prova tres estratègies en ordre:
+
+1. **Format antic** (fins ~2025): taules amb capçaleres `DIA X`.
+2. **Format nou** (setembre 2026): text sense taules, cel·les detectades
+   pels marcadors `NN.`.
+3. **OCR** (octubre 2026+): el menú va com a imatge dins del PDF. Requereix
+   tesseract instal·lat:
+
+   ```bash
+   sudo apt install tesseract-ocr tesseract-ocr-spa tesseract-ocr-cat
+   ```
+
+   Detecta l'idioma automàticament (prefereix `cat`). Les cel·les de festiu
+   (sense menú) es descarten.
+
 ### Enviar el menú per Telegram
 
 ```bash

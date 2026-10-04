@@ -1,0 +1,195 @@
+{
+  "month": "octubre",
+  "year": 2026,
+  "days": [
+    {
+      "date": "2026-10-01",
+      "weekday": "Dijous",
+      "dia": 1,
+      "primer": "Patata i bajoca",
+      "segon": "Seitons arrebossats amb amanida de tomàquet i olives",
+      "postre": "Fruita de temporada",
+      "raw": "Patata i bajoca\nSeitons arrebossats\namb amanida de tomàquet i olives\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Divendres",
+      "dia": 2,
+      "primer": "Arròs amb salsa de tomàquet",
+      "segon": "Pit de pollastre a la planxa amb humus",
+      "postre": "logurt",
+      "raw": "Arròs amb salsa de tomàquet\nPit de pollastre a la planxa\namb humus\nlogurt"
+    },
+    {
+      "date": "2026-10-05",
+      "weekday": "Dilluns",
+      "dia": 5,
+      "primer": "Cigrons estofats amb verdures",
+      "segon": "Pernillets de pollastre al forn amb amanida variada",
+      "postre": "Fruita de temporada",
+      "raw": "Cigrons estofats amb\nverdures\nPernillets de pollastre al forn amb\namanida variada\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-06",
+      "weekday": "Dimarts",
+      "dia": 6,
+      "primer": "Arròs amb verduretes",
+      "segon": "Truita de patata i ceba amb tomàquet al forn",
+      "postre": "Fruita de temporada",
+      "raw": "Arròs amb verduretes\nTruita de patata i ceba amb\ntomàquet al forn\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Dimecres",
+      "dia": 7,
+      "primer": "Crema de patata i carbassó",
+      "segon": "Mandonguilles casolanes amb salsa de verdures",
+      "postre": "Fruita de temporada",
+      "raw": "Crema de patata i carbassó\nMandonguilles casolanes\namb salsa de verdures\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": "Dijous",
+      "dia": 8,
+      "primer": "Llenties amb verduretes",
+      "segon": "Pit de pollastre a la planxa amb amanida",
+      "postre": "Fruita de temporada",
+      "raw": "Llenties amb verduretes\nPit de pollastre a la planxa\namb amanida\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-09",
+      "weekday": "Divendres",
+      "dia": 9,
+      "primer": "Patata guisada amb cap de llom",
+      "segon": "Lluç planxa amb amanida de colors",
+      "postre": "logurt",
+      "raw": "Patata guisada amb\ncap de llom\nLluç planxa amb amanida\nde colors\nlogurt"
+    },
+    {
+      "date": "2026-10-13",
+      "weekday": "Dimarts",
+      "dia": 13,
+      "primer": "Llenties amb verdures i quinoa",
+      "segon": "Salsitxa de pollastre plantxa amb patata caliu",
+      "postre": "Fruita de temporada",
+      "raw": "Llenties amb verdures i\nquinoa\nSalsitxa de pollastre plantxa\namb patata caliu\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "Dimecres",
+      "dia": 14,
+      "primer": "Patata guisada amb verdures",
+      "segon": "Ous amb salsa de tomàquet i formatge rallat",
+      "postre": "Fruita de temporada",
+      "raw": "Patata guisada\namb verdures\nOus amb salsa de tomàquet i\nformatge rallat\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "Dijous",
+      "dia": 15,
+      "primer": "Fideuada amb fumet de peix i sípia",
+      "segon": "Croquetes d'espinacs amb amanida",
+      "postre": "Fruita de temporada",
+      "raw": "Fideuada amb fumet de\npeix i sípia\nCroquetes d'espinacs amb\namanida\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": "Divendres",
+      "dia": 16,
+      "primer": "Patata i bròquil",
+      "segon": "Daus de tonyna amb salseta de tomàquet",
+      "postre": "logurt",
+      "raw": "Patata i bròquil\nDaus de tonyna amb\nsalseta de tomàquet\nlogurt"
+    },
+    {
+      "date": "2026-10-19",
+      "weekday": "Dilluns",
+      "dia": 19,
+      "primer": "Patata i coliflor",
+      "segon": "Truita francesa amb tomàquet al forn",
+      "postre": "Fruita de temporada",
+      "raw": "Patata i coliflor\nTruita francesa amb tomàquet\nal forn\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": "Dimarts",
+      "dia": 20,
+      "primer": "Arròs amb verduretes",
+      "segon": "Goulash de porc amb xampinyons i pastanagues",
+      "postre": "Fruita de temporada",
+      "raw": "Arròs amb verduretes\nGoulash de porc amb\nxampinyons i pastanagues\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "Dimecres",
+      "dia": 21,
+      "primer": "Crema de patata, pastanaga i carbassa",
+      "segon": "Llenties estofades amb verdures",
+      "postre": "Fruita de temporada",
+      "raw": "Crema de patata, pastanaga\ni carbassa\nLlenties estofades amb\nverdures\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-22",
+      "weekday": "Dijous",
+      "dia": 22,
+      "primer": "Cigrons estofats amb ou i espinacs",
+      "segon": "Lluç planxa amb amanida de colors",
+      "postre": "Fruita de temporada",
+      "raw": "Cigrons estofats amb ou\ni espinacs\nLluç planxa amb amanida\nde colors\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-23",
+      "weekday": "Divendres",
+      "dia": 23,
+      "primer": "Sopa amb pasta meravella",
+      "segon": "Pernillets amb salsa d'all i amanida verde",
+      "postre": "logurt",
+      "raw": "Sopa amb pasta meravella\nPernillets amb salsa\nd'all i amanida verde\nlogurt"
+    },
+    {
+      "date": "2026-10-26",
+      "weekday": "Dilluns",
+      "dia": 26,
+      "primer": "Menestra de verdures amb ou dur",
+      "segon": "Salmó a la planxa amb amanida variada",
+      "postre": "Fruita de temporada",
+      "raw": "Menestra de verdures\namb ou dur\nSalmó a la planxa amb\namanida variada\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-27",
+      "weekday": "Dimarts",
+      "dia": 27,
+      "primer": "Patata guisada amb verdures",
+      "segon": "Pit de pollastre planxa amb humus",
+      "postre": "Fruita de temporada",
+      "raw": "Patata guisada amb verdures\nPit de pollastre planxa\namb humus\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": "Dimecres",
+      "dia": 28,
+      "primer": "Espaguetis amb salsa bolognesa",
+      "segon": "Seitons arrebossats amb amanida variada",
+      "postre": "Fruita de temporada",
+      "raw": "Espaguetis amb salsa\nbolognesa\nSeitons arrebossats\namb amanida variada\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Dijous",
+      "dia": 29,
+      "primer": "Crema de marisc amb arròs integral",
+      "segon": "Carbonada de llom amb salsa de verdures",
+      "postre": "Fruita de temporada",
+      "raw": "Crema de marisc amb\narròs integral\nCarbonada de llom\namb salsa de verdures\nFruita de temporada"
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "Divendres",
+      "dia": 30,
+      "primer": "Patata i bajoca",
+      "segon": "Hamburguesa casolana amb amanida variada",
+      "postre": "logurt",
+      "raw": "Patata i bajoca\nHamburguesa casolana\namb amanida variada\nlogurt"
+    }
+  ]
+}

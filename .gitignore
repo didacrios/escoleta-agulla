@@ -46,3 +46,6 @@ output/
 *.tmp
 *.log
 
+# Local Pi runtime state
+.atl/
+odd/

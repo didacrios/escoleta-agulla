@@ -1,6 +1,11 @@
 # PDF Processing
 PyPDF2==3.0.1
 pdfplumber==0.11.0
+pypdfium2==5.0.0
+pytesseract==0.3.13
+
+# OCR engine (system binary, install separately):
+#   sudo apt install tesseract-ocr tesseract-ocr-spa tesseract-ocr-cat
 
 # Telegram Bot
 python-telegram-bot==20.7
