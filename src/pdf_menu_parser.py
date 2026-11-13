@@ -73,8 +73,13 @@ WEEKDAY_FROM_DATE_CA = ['Dilluns', 'Dimarts', 'Dimecres', 'Dijous', 'Divendres',
 NEW_FORMAT_DAY_RE = re.compile(r'^(\d{1,2})\.(.*)$')
 
 # Postres coneguts (per detectar l'últim plat com a postre al format nou).
-# Tolerant a la confusió OCR entre I/l/1 a "iogurt"
-POSTRES_RE = re.compile(r'^(fruita|[iyl1]?ogurt|yogurt|yoghurt)\b', re.IGNORECASE)
+# Tolerant a la confusió OCR entre I/l/1 a "iogurt" i al truncat "logu"
+POSTRES_RE = re.compile(r'^(fruita|[iylo1]?ogurt|logu|yogurt|yoghurt)\b', re.IGNORECASE)
+
+# Paraula sola de postre a mitja línia (per separar-la del segon plat):
+# es retalla des del postre fins al final, descartant brossa posterior
+POSTRES_INLINE_RE = re.compile(
+    r'\b(fruita de temporada|[iylo1]?ogurt|logu(rt)?)\b', re.IGNORECASE)
 
 
 def extract_days_new_format(pdf_path: str) -> dict[int, list[str]]:
@@ -324,25 +329,44 @@ def _group_words_into_lines(words: list[dict]) -> list[list[dict]]:
 # vàlides en català dins del menú ("patata i bajoca", "a la planxa")
 OCR_ALLOWED_SINGLE_CHARS = {'i', 'a', 'y', 'o', 'u'}
 
+# Paraules catalanes reals de 2 lletres minúscules que poden aparèixer
+OCR_LOWER_2CHAR_WORDS = {'al', 'de', 'el', 'la', 'un', 'ou', 'pa', 'ja', 'ho', 'hi'}
+
 
 def _is_ocr_junk_token(text: str) -> bool:
     """
     Detecta tokens que són restes d'icones d'al·lèrgens, no text del menú.
 
-    Les icones grises/desaturades deixen restes curtes sense sentit:
-    "GO)", "EP.", "GG", "es)"... El text real del menú és frases amb
-    paraules catalanes completes.
+    Les icones deixen restes sense sentit: "GO)", "EP.", "GG", "xa",
+    "————éééLLÇLÉ"... El text real del menú són frases amb paraules
+    catalanes completes.
     """
     if len(text) == 1:
         return text not in OCR_ALLOWED_SINGLE_CHARS
-    # Puntuació de tancament en tokens curts: "GO)", "es)", "EP."
+    # Ratlles llargues o seqüències de punts: separadors gràfics
+    if re.search(r'[—–_\-.]{2,}', text):
+        return True
+    # Puntuació enganxada en tokens curts: "GO)", "es)", "EP."
     if len(text) <= 4 and re.search(r'[\)\(\[\].,;:]', text):
+        return True
+    # Tokens curts on la puntuació domina sobre les lletres: "(8a", "9/6)"
+    letters = len(re.findall(r'[A-Za-zÀ-ÿ]', text))
+    if len(text) <= 4 and letters < len(text) / 2:
+        return True
+    # Tokens molt curts amb una sola lletra i símbols: "r-", "(éò", "o)"
+    if len(text) <= 3 and letters == 1 and not text.isalpha():
         return True
     # Sigles de 2-3 majúscules: "GG", "SS", "EQ"
     if len(text) <= 3 and text.isupper() and text.isalpha():
         return True
     # 2 lletres amb inicial majúscula: "Pr", "En" (excepte articles reals)
     if len(text) == 2 and text.isalpha() and text[0].isupper() and text not in ('El', 'La'):
+        return True
+    # 2 lletres minúscules sense sentit: "xa", "bn", "qx" ("al", "ou"... passen)
+    if len(text) == 2 and text.isalpha() and text.islower() and text not in OCR_LOWER_2CHAR_WORDS:
+        return True
+    # Tokens curts que comencen amb puntuació d'obertura: "(éò", "(CA"
+    if len(text) <= 4 and text[0] in '([{':
         return True
     return False
 
@@ -354,14 +378,16 @@ def _split_postre_lines(lines: list[str]) -> list[str]:
     """
     result = []
     for line in lines:
-        match = re.search(r'\b(fruita de temporada|[iylo1]?ogurt)\s*$', line, re.IGNORECASE)
-        if match and match.start() > 0:
+        match = POSTRES_INLINE_RE.search(line)
+        if match:
             before = line[:match.start()].strip()
             if before:
                 result.append(before)
             result.append(match.group(1).strip())
-        else:
-            result.append(line)
+            # El postre és sempre l'últim contingut de la cel·la:
+            # descartem qualsevol línia de brossa posterior ("Das", "rr")
+            break
+        result.append(line)
     return result
 
 
@@ -500,6 +526,43 @@ def extract_days_ocr(pdf_path: str) -> dict[int, list[str]]:
 
     header_height = int(max(a['height'] for a in anchors))
 
+    def col_of_x(cx: float) -> int | None:
+        return next((i for i in range(len(col_centers)) if col_bounds[i][0] <= cx < col_bounds[i][1]), None)
+
+    def row_of_top(top: float) -> int | None:
+        for i in range(len(row_starts)):
+            lower = (row_starts[i - 1] + row_starts[i]) / 2 if i > 0 else float('-inf')
+            upper = (row_starts[i] + row_starts[i + 1]) / 2 if i + 1 < len(row_starts) else float('inf')
+            if lower <= top < upper:
+                return i
+        return None
+
+    # Cel·les de la graella sense àncora: la passada global a vegades omet
+    # alguna capçalera "DIA N". Es re-omr la franja de capçalera de cada
+    # cel·la buida (una sola línia, psm 7) i s'afegeix l'àncora si apareix.
+    covered = {(row_of_top(a['top']), col_of_x(a['cx'])) for a in anchors}
+    covered.discard((None, None))
+    for row in range(len(row_starts)):
+        for col in range(len(col_centers)):
+            if (row, col) in covered:
+                continue
+            col_left, col_right = col_bounds[col]
+            strip = image.crop((max(0, col_left),
+                                max(0, row_starts[row] - 8),
+                                min(image.width, col_right),
+                                min(image.height, row_starts[row] + header_height + 8)))
+            strip_text = pytesseract.image_to_string(strip, lang=lang, config='--psm 7').strip()
+            m = re.search(r'D[I1l!|]A\s*(\d{1,2})', strip_text, re.IGNORECASE)
+            if m:
+                anchors.append({
+                    'day': int(m.group(1)),
+                    'x0': col_left + 10,
+                    'cx': (col_left + col_right) / 2,
+                    'top': row_starts[row],
+                    'height': header_height,
+                })
+                covered.add((row, col))
+
     def row_bounds_of(i: int) -> tuple[int, int]:
         start = row_starts[i]
         top = start + header_height + 6
@@ -513,15 +576,8 @@ def extract_days_ocr(pdf_path: str) -> dict[int, list[str]]:
     # (psm 6), molt més estable que assignar tokens de la passada global
     days: dict[int, list[str]] = {}
     for anchor in anchors:
-        col = next((i for i, cx in enumerate(col_centers) if col_bounds[i][0] <= anchor['cx'] < col_bounds[i][1]), None)
-        # Files per punts mitjos entre inicis de fila consecutius
-        row = None
-        for i in range(len(row_starts)):
-            lower = (row_starts[i - 1] + row_starts[i]) / 2 if i > 0 else float('-inf')
-            upper = (row_starts[i] + row_starts[i + 1]) / 2 if i + 1 < len(row_starts) else float('inf')
-            if lower <= anchor['top'] < upper:
-                row = i
-                break
+        col = col_of_x(anchor['cx'])
+        row = row_of_top(anchor['top'])
         if col is None or row is None:
             continue
 
@@ -575,12 +631,19 @@ def extract_days_ocr(pdf_path: str) -> dict[int, list[str]]:
         ]
         text_lines = [line for line in text_lines if line.strip()]
         text_lines = _split_postre_lines(text_lines)
-        # Correccions de paraules freqüents on l'OCR perd l'accent
-        ocr_word_fixes = {'tomaquet': 'tomàquet', 'sipia': 'sípia'}
-        text_lines = [
-            re.sub(r'\b(tomaquet|sipia)\b', lambda m: ocr_word_fixes[m.group(1)], line)
-            for line in text_lines
-        ]
+        # Correccions de paraules freqüents on l'OCR perd l'accent o confon
+        # lletres (case-insensitive, conservant la inicial majúscula)
+        ocr_word_fixes = {'tomaquet': 'tomàquet', 'sipia': 'sípia',
+                          'marmitaho': 'marmitako', 'mores': 'moresc'}
+        fixed_lines = []
+        for line in text_lines:
+            line = re.sub(r'\bhalibut mana\b', 'halibut romana', line)
+            for wrong, right in ocr_word_fixes.items():
+                line = re.sub(r'\b' + wrong + r'\b',
+                              lambda m, r=right: r.capitalize() if m.group(0)[0].isupper() else r,
+                              line, flags=re.IGNORECASE)
+            fixed_lines.append(line)
+        text_lines = fixed_lines
 
         # Cel·la de festiu: cap contingut més enllà del marcador.
         # Tolerant a errors d'OCR sobre "FESTIU" (FESUY, FESIU...)
@@ -591,6 +654,14 @@ def extract_days_ocr(pdf_path: str) -> dict[int, list[str]]:
             days[anchor['day']] = text_lines
 
     return days
+
+
+def _cleanup_plat(text: str) -> str:
+    """
+    Neteja restes d'icones entre línies d'un plat: "fumet al" + "de peix"
+    ("al de" no és català vàlid) -> "fumet de peix".
+    """
+    return re.sub(r'\b(al|a)\s+de\b', 'de', text).strip()
 
 
 def build_menu_from_new_format(day_cells: dict[int, list[str]], month: str, year: int) -> dict:
@@ -630,17 +701,17 @@ def build_menu_from_new_format(day_cells: dict[int, list[str]], month: str, year
         if current_plat:
             plats.append(' '.join(current_plat))
 
-        primer = plats[0] if len(plats) > 0 else ''
-        segon = plats[1] if len(plats) > 1 else ''
+        primer = _cleanup_plat(plats[0]) if len(plats) > 0 else ''
+        segon = _cleanup_plat(plats[1]) if len(plats) > 1 else ''
 
         # L'últim plat pot ser el postre (ex: "Fruita de temporada")
         postre = 'N/D'
         if len(plats) > 2 and POSTRES_RE.match(plats[-1]):
-            postre = plats[-1]
+            postre = _cleanup_plat(plats[-1])
             plats = plats[:-1]
-            segon = ' '.join(plats[1:]) if len(plats) > 1 else ''
+            segon = _cleanup_plat(' '.join(plats[1:])) if len(plats) > 1 else ''
         elif len(plats) > 2:
-            segon = ' '.join(plats[1:])
+            segon = _cleanup_plat(' '.join(plats[1:]))
 
         iso_date = day_to_iso_date(day_number, month, year)
         weekday = WEEKDAY_FROM_DATE_CA[date(year, MONTHS_CA[month.lower()], day_number).weekday()]

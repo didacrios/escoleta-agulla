@@ -1,0 +1,177 @@
+{
+  "month": "novembre",
+  "year": 2026,
+  "days": [
+    {
+      "date": "2026-11-03",
+      "weekday": "Dimarts",
+      "dia": 3,
+      "primer": "Llenties estofades amb quinoa",
+      "segon": "Escalope de pao planxa amb amanida de tomàquet i olives",
+      "postre": "Fruita de temporada",
+      "raw": "Llenties estofades\namb quinoa\nEscalope de pao planxa amb\namanida de tomàquet i olives\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "Dimecres",
+      "dia": 4,
+      "primer": "Arròs amb salsa de tomàquet",
+      "segon": "Truita de patata i ceba amb enciam, moresc i pastanaga",
+      "postre": "Fruita de temporada",
+      "raw": "Arròs amb salsa de tomàquet\nTruita de patata i ceba amb\nenciam, moresc i pastanaga\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-06",
+      "weekday": "Divendres",
+      "dia": 6,
+      "primer": "Sopa de peix amb arròs",
+      "segon": "Cuixa de pollastre al forn amb patata caliu",
+      "postre": "logurt",
+      "raw": "Sopa de peix amb arròs\nCuixa de pollastre al forn\namb patata caliu\nlogurt"
+    },
+    {
+      "date": "2026-11-09",
+      "weekday": "Dilluns",
+      "dia": 9,
+      "primer": "Patata i bajoca",
+      "segon": "Pit de pollastre a la planxa amb fesols i tomaquets xerrys saltejats",
+      "postre": "Fruita de temporada",
+      "raw": "Patata i bajoca\nPit de pollastre a la planxa amb fesols\ni tomaquets xerrys saltejats\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-10",
+      "weekday": "Dimarts",
+      "dia": 10,
+      "primer": "Macarrons amb salsa de fromatge",
+      "segon": "Filet de lluç a la planxa amb enciam, pastanaga i xerrys",
+      "postre": "Fruita de temporada",
+      "raw": "Macarrons amb salsa\nde fromatge\nFilet de lluç a la planxa amb\nenciam, pastanaga i xerrys\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-11",
+      "weekday": "Dimecres",
+      "dia": 11,
+      "primer": "Patata guisada amb verdures",
+      "segon": "Croquetes de bullit amb enciam moresc i espàrrecs",
+      "postre": "logurt",
+      "raw": "Patata guisada amb verdures\nCroquetes de bullit amb enciam\nmoresc i espàrrecs\nlogurt"
+    },
+    {
+      "date": "2026-11-12",
+      "weekday": "Dijous",
+      "dia": 12,
+      "primer": "Cigrons estofats amb verduretes i espinacs",
+      "segon": "Burguer de pastanaga planxa amb enciam i olives",
+      "postre": "Fruita de temporada",
+      "raw": "Cigrons estofats amb\nverduretes i espinacs\nBurguer de pastanaga planxa\namb enciam i olives\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-13",
+      "weekday": "Divendres",
+      "dia": 13,
+      "primer": "Crema de carbassa, porro i pastanaga",
+      "segon": "Arròs integral amb verdures",
+      "postre": "Fruita de temporada",
+      "raw": "Crema de carbassa, porro i\npastanaga\nArròs integral amb verdures\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-16",
+      "weekday": "Dilluns",
+      "dia": 16,
+      "primer": "Patata i bajoca",
+      "segon": "Filet de halibut romana amb enciam, pastanaga i olives",
+      "postre": "Fruita de temporada",
+      "raw": "Patata i bajoca\nFilet de halibut romana\namb enciam, pastanaga i olives\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-17",
+      "weekday": "Dimarts",
+      "dia": 17,
+      "primer": "Marmitako de tonyna amb patata",
+      "segon": "Truita francesa amb enciam, moresc i olives",
+      "postre": "Fruita de temporada",
+      "raw": "Marmitako de tonyna\namb patata\nTruita francesa amb enciam,\nmoresc i olives\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-18",
+      "weekday": "Dimecres",
+      "dia": 18,
+      "primer": "Llenties estofades amb verdures",
+      "segon": "Arròs amb salsa de tomàquet",
+      "postre": "Fruita de temporada",
+      "raw": "Llenties estofades amb\nverdures\nArròs amb salsa de tomàquet\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-19",
+      "weekday": "Dijous",
+      "dia": 19,
+      "primer": "Sopa de pollastre amb pasta maravella",
+      "segon": "Pernillets de pollastre al forn amb moresc",
+      "postre": "Fruita de temporada",
+      "raw": "Sopa de pollastre\namb pasta maravella\nPernillets de pollastre\nal forn amb moresc\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-20",
+      "weekday": "Divendres",
+      "dia": 20,
+      "primer": "Fesols de ganxet estofats amb verdures",
+      "segon": "Salsitxa amb salsa de tomàquet i ou dur",
+      "postre": "logurt",
+      "raw": "Fesols de ganxet estofats\namb verdures\nSalsitxa amb salsa de\ntomàquet i ou dur\nlogurt"
+    },
+    {
+      "date": "2026-11-23",
+      "weekday": "Dilluns",
+      "dia": 23,
+      "primer": "Cigrons estofats amb verduretess i espinacs",
+      "segon": "Seitons enfarinats amb amanida variada",
+      "postre": "Fruita de temporada",
+      "raw": "Cigrons estofats amb\nverduretess i espinacs\nSeitons enfarinats amb\namanida variada\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": "Dimarts",
+      "dia": 24,
+      "primer": "Patata guisada amb verdures",
+      "segon": "Pit de pollastre planxa amb enciam, olives i moresc",
+      "postre": "Fruita de temporada",
+      "raw": "Patata guisada amb verdures\nPit de pollastre planxa amb\nenciam, olives i moresc\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": "Dimecres",
+      "dia": 25,
+      "primer": "Fideua amb fumet de peix i sípia",
+      "segon": "Truita de patata i ceba amb tomàquet amanit i olives",
+      "postre": "Fruita de temporada",
+      "raw": "Fideua amb fumet al\nde peix i sípia\nTruita de patata i ceba amb\ntomàquet amanit i olives\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "Dijous",
+      "dia": 26,
+      "primer": "Arròs amb verdures",
+      "segon": "Goulash de porc amb ceba i xampinyons",
+      "postre": "logurt",
+      "raw": "Arròs amb verdures\nGoulash de porc amb ceba\ni xampinyons\nlogurt"
+    },
+    {
+      "date": "2026-11-27",
+      "weekday": "Divendres",
+      "dia": 27,
+      "primer": "Crema de pastanaga i carbassa",
+      "segon": "Llenties estofades amb verdures",
+      "postre": "Fruita de temporada",
+      "raw": "Crema de pastanaga\ni carbassa\nLlenties estofades\namb verdures\nFruita de temporada"
+    },
+    {
+      "date": "2026-11-30",
+      "weekday": "Dilluns",
+      "dia": 30,
+      "primer": "Macarrons amb salsa napolitana",
+      "segon": "Pit de pollastre planxa amb humus i palets de pa",
+      "postre": "Fruita de temporada",
+      "raw": "Macarrons amb salsa\nnapolitana\nPit de pollastre planxa amb\nhumus i palets de pa\nFruita de temporada"
+    }
+  ]
+}
